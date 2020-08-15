@@ -11,6 +11,7 @@ addons:
       - ia32-libs
       - libc6-dev-i386
       - linux-headers-generic
+      - g++
 jobs:
   include:
     - stage: build
