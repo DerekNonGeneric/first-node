@@ -12,6 +12,7 @@ addons:
       - libc6-dev-i386
       - linux-headers-generic
       - libstdc++5
+      - g++-multilib
 jobs:
   include:
     - stage: build
