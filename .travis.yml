@@ -10,6 +10,7 @@ addons:
     packages:
       - gcc-multilib
       - c++-multilib
+      - ia32-libs 
 jobs:
   include:
     - stage: build

@@ -227,7 +227,7 @@ V8_EXTRA_FLAGS = {
   'gcc': {
     'all': {
       'CXXFLAGS':     [], #['-fvisibility=hidden'],
-      'WARNINGFLAGS': ['-Wall', '-W',
+      'WARNINGFLAGS': ['-Wall', '-pedantic', '-m32', '-W',
           '-Wno-unused-parameter']
     },
     'os:win32': {
