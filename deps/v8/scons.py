@@ -26,7 +26,7 @@
 
 __revision__ = "src/script/scons.py 3842 2008/12/20 22:59:52 scons"
 
-__version__ = "1.2.0"
+__version__ = "1.2.14"
 
 __build__ = "r3842"
 
