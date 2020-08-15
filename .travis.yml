@@ -14,6 +14,7 @@ jobs:
     - stage: build
       name: 'Build'
       script:
+        - export C_INCLUDE_PATH=/usr/include/$(gcc -print-multiarch)
         - ./configure
         - make
         - make install
