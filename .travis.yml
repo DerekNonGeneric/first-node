@@ -1,0 +1,20 @@
+dist: precise
+before_install:
+  # Install and manage Debian Lenny packages (Ubuntu Precise is too new)
+  - sudo add-apt-repository 'deb http://archive.debian.org/debian-archive/debian/ lenny main contrib'
+stages:
+  - name: build
+addons:
+  apt:
+    packages:
+      - gcc-multilib
+      - c++-multilib
+      - g++
+jobs:
+  include:
+    - stage: build
+      name: 'Build'
+      script:
+        - ./configure
+        - make
+        - make install
