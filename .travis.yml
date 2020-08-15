@@ -3,13 +3,11 @@ before_install:
   # Install and manage Debian Lenny packages (Ubuntu Precise is too new)
   - sudo add-apt-repository 'deb http://archive.debian.org/debian-archive/debian/ lenny main contrib'
   - sudo add-apt-repository 'deb http://archive.debian.org/debian-security/ lenny/updates main contrib'
-  - apt-get --purge remove libstdc++
 stages:
   - name: build
 addons:
   apt:
     packages:
-      - libstdc++
       - gcc-multilib
       - c++-multilib
 jobs:
