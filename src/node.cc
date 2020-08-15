@@ -6,10 +6,11 @@
 #include "timer.h"
 #include "constants.h"
 
-#include "natives.h" 
+#include "natives.h"
 
 #include <stdio.h>
 #include <assert.h>
+#include <strings.h>
 
 #include <string>
 #include <list>
