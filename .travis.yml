@@ -9,6 +9,7 @@ addons:
   apt:
     packages:
       - ia32-libs
+      - libc6-dev-i386
 jobs:
   include:
     - stage: build
