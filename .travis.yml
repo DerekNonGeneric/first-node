@@ -8,9 +8,7 @@ stages:
 addons:
   apt:
     packages:
-      - gcc-multilib
-      - c++-multilib
-      - ia32-libs 
+      - ia32-libs
 jobs:
   include:
     - stage: build
